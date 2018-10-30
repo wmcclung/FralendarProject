@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fralendar - Connecting you with friends</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap4-retro.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .SimilarFreeTime {
+margin: 5px;
+
+}
+</style>
+    <link rel="icon" href="assets/images/calendar-icon.png">
+</head>
+
+
+
+<body>
+
+    <div class="jumbotron" id="fralendar-welcome" style="background-color: 
+    #ffd400; color: 
+     #ca2d2a;">
+        <div class="container">
+            <h1 class="display-3">Welcome to Fralendar</h1>
+            <p class="lead" style="width: 75%;">Fralendar connects you and your squad by matching your free time
+                filling
+                it with great local
+                events. No more endless group texts.</p>
+            <hr class="my-4">
+            <p>Sign-in below, and let the good times roll!</p>
+        </div>
+        <div class="container">
+            <p class="lead">
+
+                <div class="login-form">
+
+                    <input class="email" placeholder="Email">
+                    <input class="password" type="password" placeholder="Password">
+                    <br>
+                    <br>
+                    <button class="signin">Sign In</button>
+                    <button class="register">Register</button>
+                </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary login-success" style="color:#ca2d2a">
+
+        <h3> Welcome,
+            <span class="name-display"></span>!&nbsp;&nbsp;</h3>
+        Current Location: <span class="zip-display"></span> &nbsp;&nbsp;
+        <button class="logout">Logout</button>
+        <!-- </div> -->
+        <!-- </div> -->
+    </nav>
+    <div class="input-name-zip">
+        Please input your name and zip code:
+        <input class="name-input" placeholder="Name">
+        <input class="zip-input" placeholder="Zip">
+        <button class="submit-name-zip">Submit Name & Zip</button>
+    </div>
+    </p>
+
+
+
+    <div class="jumbotron Calendar" style="padding: 10;padding-top: 10px;padding-left: 10px;padding-right: 10px;">
+
+        <div class="container">
+
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <h3>Fill out your calendar to get started</h3>
+                <h6>Click once if you're free, and twice if you're busy</h6>
+                <hr><br>
+                <div class="calendarHTML"></div>
+                <br><br>
+                <hr>
+                <p class="lead"> Go ahead, young one, pick a time to schedule your events.</p>
+                <div class="eventbtn"></div>
+
+
+            </div>
+            <div class="col-md-5">
+                <div class="eventDisplay">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    <div class="login-modal modal">
+        <div class="modal-content">
+            <p>Please use the email format using both " @ " and " . ". Also, please ensure your password is at
+                least 6 letters long.</p>
+            <button class="btn modal-close login-close">Close</button>
+        </div>
+    </div>
+
+
+    <div class="name-zip-modal modal">
+        <div class="modal-content">
+            <p>Your Zip must contain 5 numeric characters</p>
+            <button class="btn modal-close name-zip-close">Close</button>
+        </div>
+    </div>
+    </div>
+    <div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="assets/login.js"></script>
+    <script src="assets/fralendar.js"></script>
+    <script src="assets/apis-events.js"></script>
+    <script src="assets/eventful.js"></script>
+
+</body>
+
+</html>
